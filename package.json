@@ -1,0 +1,20 @@
+{
+  "name": "eslint-plugin-tailwindcss-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ocavue <ocavue@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "daisyui": "^1.16.0",
+    "eslint": "^8.1.0",
+    "eslint-plugin-tailwindcss": "^1.17.0",
+    "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+    "fix": "eslint --ignore-path .gitignore --ext '.js,.jsx,.ts,.tsx' --fix .",
+    "build:css": "tailwindcss --config tailwind.config.js --jit --output dist/output.css"
+  },
+  "devDependencies": {
+    "react": "^17.0.2"
+  }
+}
